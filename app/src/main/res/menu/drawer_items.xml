@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/Info"
+        android:title="Account Information"
+        android:icon="@drawable/info_circle"/>
+
+    <item android:id="@+id/Password"
+        android:icon="@drawable/password_icon"
+        android:title="Password"/>
+
+    <item android:id="@+id/myOder"
+        android:icon="@drawable/bag_icon"
+        android:title="My Order"/>
+
+    <item android:id="@+id/MyProduct"
+        android:icon="@drawable/like_icon"
+        android:title="My products"/>
+
+    <item android:id="@+id/Logout"
+        android:icon="@drawable/logout_icon"
+        android:title="Logout"
+
+        />
+
+</menu>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_products">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="58dp"
+        android:fontFamily="@font/inter"
+        android:text="Add products"
+        android:textSize="17sp"
+        android:textColor="#1D1E20" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="17sp"
+                android:fontFamily="@font/inter"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="Type your product name"
+                android:padding="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="17sp"
+                android:fontFamily="@font/inter"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="231dp"
+                android:background="@null"
+                android:gravity="start"
+                android:hint="Product description"
+                android:padding="15dp"
+                android:inputType="textMultiLine|textCapSentences"
+                android:lines="5"
+                android:maxLines="7"
+
+                android:minLines="1"
+                android:scrollbars="none" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="Available sizes, quantities and prices"
+                android:fontFamily="@font/inter"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@null"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:text="S" />
+                <EditText
+                    android:layout_width="137dp"
+                    android:layout_height="60dp"
+                    android:background="@null"
+                    android:hint="Add quantity"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:inputType="number"
+                    android:fontFamily="@font/inter"/>
+
+                <EditText
+                    android:layout_width="106dp"
+                    android:layout_height="60dp"
+                    android:background="@null"
+                    android:ems="3"
+                    android:fontFamily="@font/inter"
+                    android:hint="Price"
+                    android:gravity="center"
+                    android:layout_gravity="end"
+                    android:inputType="numberDecimal" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@null"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:text="M" />
+                <EditText
+                    android:layout_width="137dp"
+                    android:layout_height="60dp"
+                    android:background="@null"
+                    android:hint="Add quantity"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:inputType="number"
+                    android:fontFamily="@font/inter"/>
+
+                <EditText
+                    android:layout_width="106dp"
+                    android:layout_height="60dp"
+                    android:background="@null"
+                    android:ems="3"
+                    android:fontFamily="@font/inter"
+                    android:hint="Price"
+                    android:gravity="center"
+                    android:layout_gravity="end"
+                    android:inputType="numberDecimal"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@null"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:text="L" />
+                <EditText
+                    android:layout_width="137dp"
+                    android:layout_height="60dp"
+                    android:background="@null"
+                    android:hint="Add quantity"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:inputType="number"
+                    android:fontFamily="@font/inter"/>
+
+                <EditText
+                    android:layout_width="106dp"
+                    android:layout_height="60dp"
+                    android:background="@null"
+                    android:ems="3"
+                    android:fontFamily="@font/inter"
+                    android:hint="Price"
+                    android:gravity="center"
+                    android:layout_gravity="end"
+                    android:inputType="numberDecimal" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@null"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:text="XL" />
+                <EditText
+                    android:layout_width="137dp"
+                    android:layout_height="60dp"
+                    android:background="@null"
+                    android:hint="Add quantity"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:inputType="number"
+                    android:fontFamily="@font/inter"/>
+
+                <EditText
+                    android:layout_width="106dp"
+                    android:layout_height="60dp"
+                    android:background="@null"
+                    android:ems="3"
+                    android:fontFamily="@font/inter"
+                    android:hint="Price"
+                    android:gravity="center"
+                    android:layout_gravity="end"
+                    android:inputType="numberDecimal"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@null"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:text="2XL" />
+                <EditText
+                    android:layout_width="137dp"
+                    android:layout_height="60dp"
+                    android:background="@null"
+                    android:hint="Add quantity"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:inputType="number"
+                    android:fontFamily="@font/inter"/>
+
+                <EditText
+                    android:layout_width="106dp"
+                    android:layout_height="60dp"
+                    android:background="@null"
+                    android:ems="3"
+                    android:fontFamily="@font/inter"
+                    android:hint="Price"
+                    android:gravity="center"
+                    android:layout_gravity="end"
+                    android:inputType="numberDecimal" />
+
+
+
+            </LinearLayout>
+
+            
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select an image for product display"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="#000000"/>
+            
+            <ImageView
+                android:layout_width="335dp"
+                android:layout_height="359dp"
+                android:layout_gravity="center"
+                android:src="@drawable/scanner_image"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+            <Button
+                android:layout_width="158dp"
+                android:layout_height="49dp"
+                android:fontFamily="@font/inter"
+                android:layout_marginRight="15px"
+                android:layout_gravity="start"
+                android:backgroundTint="#9775FA"
+                android:text="Save"/>
+                <Button
+                android:layout_width="165dp"
+                android:layout_height="49dp"
+                android:fontFamily="@font/inter"
+                android:backgroundTint="#9775FA"
+                android:layout_gravity="end"
+                android:text="Save &amp; add more"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
