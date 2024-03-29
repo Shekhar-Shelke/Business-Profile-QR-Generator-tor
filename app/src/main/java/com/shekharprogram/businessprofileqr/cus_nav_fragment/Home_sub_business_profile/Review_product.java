@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -81,7 +82,7 @@ public class Review_product extends Fragment {
         Review_listRecyclerAdapter adapter=new Review_listRecyclerAdapter(reviewlist,getActivity(),fm);
         RecyclerView recyclerView=view.findViewById(R.id.comments_recycler);
         recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),2));
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         return view;
     }
 }

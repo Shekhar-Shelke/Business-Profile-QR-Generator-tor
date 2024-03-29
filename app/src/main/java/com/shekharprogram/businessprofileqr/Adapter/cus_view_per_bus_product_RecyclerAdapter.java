@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.shekharprogram.businessprofileqr.Customer_main;
 import com.shekharprogram.businessprofileqr.R;
+import com.shekharprogram.businessprofileqr.cus_nav_fragment.Home_sub_business_profile.Preview_product;
 import com.shekharprogram.businessprofileqr.cus_nav_fragment.Home_sub_business_profile.Review_product;
 import com.shekharprogram.businessprofileqr.cus_nav_fragment.Home_sub_business_profile.cus_business_profile;
 import com.shekharprogram.businessprofileqr.data.Bus_profile_data;
@@ -28,6 +29,7 @@ public class cus_view_per_bus_product_RecyclerAdapter extends RecyclerView.Adapt
     public cus_view_per_bus_product_RecyclerAdapter(List<ProductData> productList, Context context,FragmentManager fragmentManager) {
         this.productList = productList;
         this.context = context;
+        this.fragmentManager=fragmentManager;
     }
 
     private List<ProductData> productList;
@@ -51,7 +53,7 @@ public class cus_view_per_bus_product_RecyclerAdapter extends RecyclerView.Adapt
             @Override
             public void onClick(View v) {
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
-                Review_product fragment = new Review_product();
+                Preview_product fragment = new Preview_product();
                 transaction.replace(R.id.cus_framecontainer, fragment);
                 transaction.addToBackStack(null);
                 transaction.commit();

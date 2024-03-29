@@ -4,6 +4,8 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -73,32 +75,45 @@ public class Preview_product extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_preview_product, container, false);
+        FragmentManager fm= getActivity().getSupportFragmentManager();
+        TextView viewall=view.findViewById(R.id.viewall);
+        viewall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = fm.beginTransaction();
+                Review_product fragment = new Review_product();
+                transaction.replace(R.id.cus_framecontainer, fragment);
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
 
+        textViewDescription=view.findViewById(R.id.textViewDescription);
         String text = textViewDescription.toString();
         SpannableString ss = new SpannableString(text);
         StyleSpan boldSpan = new StyleSpan(Typeface.BOLD);
         ss.setSpan(boldSpan, text.length() - 5, text.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         textViewDescription.setText(ss);
 
-        TextView textDesc =textViewDescription.findViewById(R.id.textViewDescription);
-
-        textDesc.setOnClickListener(new View.OnClickListener() {
-            boolean isExpanded = false;
-            @Override
-            public void onClick(View v) {
-                if (isExpanded) {
-                    // Collapse the TextView to show only the initial text
-                    textDesc.setMaxLines(2);
-                    textDesc.setEllipsize(TextUtils.TruncateAt.END);
-                    isExpanded = false;
-                } else {
-                    // Expand the TextView to show the full text
-                    textDesc.setMaxLines(Integer.MAX_VALUE);
-                    textDesc.setEllipsize(null);
-                    isExpanded = true;
-                }
-            }
-        });
+//        TextView textDesc =textViewDescription.findViewById(R.id.textViewDescription);
+//
+//        textDesc.setOnClickListener(new View.OnClickListener() {
+//            boolean isExpanded = false;
+//            @Override
+//            public void onClick(View v) {
+//                if (isExpanded) {
+//                    // Collapse the TextView to show only the initial text
+//                    textDesc.setMaxLines(2);
+//                    textDesc.setEllipsize(TextUtils.TruncateAt.END);
+//                    isExpanded = false;
+//                } else {
+//                    // Expand the TextView to show the full text
+//                    textDesc.setMaxLines(Integer.MAX_VALUE);
+//                    textDesc.setEllipsize(null);
+//                    isExpanded = true;
+//                }
+//            }
+//        });
 
         return view;
     }
