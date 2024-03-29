@@ -3,6 +3,7 @@ package com.shekharprogram.businessprofileqr.cus_nav_fragment.Home_sub_business_
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -72,7 +73,7 @@ public class cus_business_profile extends Fragment {
         // Inflate the layout for this fragment
        View view= inflater.inflate(R.layout.fragment_cus_business_profile, container, false);
        RecyclerView recyclerView=view.findViewById(R.id.cus_recycleView_Myproduct);
-        
+        FragmentManager fm= getActivity().getSupportFragmentManager();
         cus_view_per_bus_productList.add(new ProductData("Nike Sportswear Club Fleece","It is a very cheppest product","$"+"999",R.drawable.image1,101));
         cus_view_per_bus_productList.add(new ProductData("Trail Running Jacket Nike Windrunner","It is a very highest product","$"+"799",R.drawable.image2,102));
         cus_view_per_bus_productList.add(new ProductData("Training Top Nike Sport Clash","It is a very low  qulity product","$"+"199",R.drawable.image3,103));
@@ -82,7 +83,7 @@ public class cus_business_profile extends Fragment {
         cus_view_per_bus_productList.add(new ProductData("Training Top Nike Sport Clash","It is a very low  qulity product","$"+"199",R.drawable.image3,103));
         cus_view_per_bus_productList.add(new ProductData("Training Top Nike Sport Clash","It is a very low  qulity product","$"+"199",R.drawable.image3,103));
         cus_view_per_bus_productList.add(new ProductData("Trail Running Jacket Nike Windrunner","It is a very high qulity  product","$"+"499",R.drawable.image4,104));
-        cus_view_per_bus_product_RecyclerAdapter adapter = new cus_view_per_bus_product_RecyclerAdapter(cus_view_per_bus_productList, getActivity());
+        cus_view_per_bus_product_RecyclerAdapter adapter = new cus_view_per_bus_product_RecyclerAdapter(cus_view_per_bus_productList, getActivity(),fm);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),2));
         return view;

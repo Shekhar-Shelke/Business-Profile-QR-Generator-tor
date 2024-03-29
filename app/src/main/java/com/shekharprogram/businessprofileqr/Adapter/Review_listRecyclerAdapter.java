@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.shekharprogram.businessprofileqr.R;
@@ -19,10 +20,11 @@ import java.util.List;
 public class Review_listRecyclerAdapter extends RecyclerView.Adapter<Review_listRecyclerAdapter.Review_listViewholder> {
     private List<ReviewCommentData> reviewList;
     Context context;
-
-    public Review_listRecyclerAdapter(List<ReviewCommentData> reviewList, Context context) {
+    private FragmentManager fragmentManager;
+    public Review_listRecyclerAdapter(List<ReviewCommentData> reviewList, Context context, FragmentManager fragmentManager) {
         this.reviewList = reviewList;
         this.context = context;
+        this.fragmentManager = fragmentManager;
     }
 
 

@@ -3,12 +3,13 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_weight="1"
+    android:id="@+id/relative_layout"
     android:layout_marginRight="15dp"
     android:layout_marginBottom="15dp">
-<androidx.cardview.widget.CardView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/procard">
+<!--<androidx.cardview.widget.CardView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:id="@+id/procard">-->
     <ImageView
         android:id="@+id/imageView"
         android:src="@drawable/image1"
@@ -34,7 +35,7 @@
         android:textStyle="bold"
         android:layout_gravity=""
         android:textColor="@color/black"/>
-</androidx.cardview.widget.CardView>
+<!--</androidx.cardview.widget.CardView>-->
 
 
 

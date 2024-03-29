@@ -3,6 +3,7 @@ package com.shekharprogram.businessprofileqr.cus_nav_fragment.Home_sub_business_
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -71,12 +72,13 @@ public class Review_product extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_review_product, container, false);
+        FragmentManager fm= getActivity().getSupportFragmentManager();
         reviewlist.add(new ReviewCommentData(R.drawable.image1,3.5,"Shekhar","15 feb 2024","Amazing Product it look like ohhh"));
         reviewlist.add(new ReviewCommentData(R.drawable.image2,2.5,"Naresh","20 feb 2024"," Very cute and comfortable"));
         reviewlist.add(new ReviewCommentData(R.drawable.image3,4.5,"Akash","12 mar 2024"," Love this shirt"));
         reviewlist.add(new ReviewCommentData(R.drawable.image4,3.0,"Ayush","17 mar 2024","Great quality. Comfortable. Looks nice."));
         reviewlist.add(new ReviewCommentData(R.drawable.image1,5.0,"Aditya","25 mar 2024","PERFECT FOR AND HALLOWEEN COSTUME"));
-        Review_listRecyclerAdapter adapter=new Review_listRecyclerAdapter(reviewlist,getActivity());
+        Review_listRecyclerAdapter adapter=new Review_listRecyclerAdapter(reviewlist,getActivity(),fm);
         RecyclerView recyclerView=view.findViewById(R.id.comments_recycler);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),2));
