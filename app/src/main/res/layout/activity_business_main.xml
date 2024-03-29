@@ -9,8 +9,10 @@
     android:id="@+id/drawer_layout"
     android:fitsSystemWindows="true"
     tools:context=".Business_main">
-    <include
-        layout="@layout/activity_business_main_content"/>
+
+    <include android:id="@+id/appbarMain"
+        layout="@layout/app_top_bar_main"/>
+
 
 <com.google.android.material.navigation.NavigationView
     android:id="@+id/navigationview"

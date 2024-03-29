@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".cus_nav_fragment.Home_sub_business_profile.Preview_product">
+
+    <!-- TODO: Update blank fragment layout -->
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="387dp"
+       android:src="@drawable/image1"
+       android:id="@+id/heroImage"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Men's Printed Pullover Hoodie"
+            android:textSize="13sp"
+            android:fontFamily="@font/inter"
+            android:textColor="#8F959E"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textSize="13dp"
+            android:fontFamily="@font/inter"
+            android:textColor="#8F959E"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nike Club Fleece"
+            android:textSize="22sp"
+            android:fontFamily="@font/inter"
+            android:textColor="#1D1E20"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$120"
+            android:textSize="22dp"
+            android:fontFamily="@font/inter"
+            android:textColor="#1D1E20"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:layout_weight="1"
+            android:src="@drawable/image2"
+            android:background="@drawable/rounded_corner"/>
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:src="@drawable/image2"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"/>
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:src="@drawable/image2"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"/>
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:src="@drawable/image2"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"/>
+        
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size"
+            android:textSize="17sp"
+            android:fontFamily="@font/inter"
+            android:textColor="#1D1E20"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size Guide"
+            android:textSize="15dp"
+            android:fontFamily="@font/inter"
+            android:textColor="#8F959E"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="S"
+            android:textStyle="bold"
+            android:textColor="#1D1E20"
+            android:fontFamily="@font/inter"
+            android:textSize="17dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="M"
+            android:textStyle="bold"
+            android:textColor="#1D1E20"
+            android:fontFamily="@font/inter"
+            android:textSize="17dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="L"
+            android:textStyle="bold"
+            android:textColor="#1D1E20"
+            android:fontFamily="@font/inter"
+            android:textSize="17dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="XL"
+            android:textStyle="bold"
+            android:textColor="#1D1E20"
+            android:fontFamily="@font/inter"
+            android:textSize="17dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="2XL"
+            android:textStyle="bold"
+            android:textColor="#1D1E20"
+            android:fontFamily="@font/inter"
+            android:textSize="17dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="17dp"
+            android:textColor="#1D1E20"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Nike Throwback Pullover Hoodie is made from premium French terry fabric that blends a performance feel with a vintage look."
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:padding="8dp"
+            android:lineSpacingExtra="4dp"
+            android:background="@android:color/transparent"
+            android:gravity="start"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review"
+            android:textSize="17dp"
+            android:textColor="#1D1E20"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size Guide"
+                android:textSize="15dp"
+                android:fontFamily="@font/inter"
+                android:textColor="#8F959E"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/image2"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Ronald Richards"
+                    android:fontFamily="@font/inter"
+                    android:textSize="15sp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/access_time_24"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="13 sep,2024"
+                        android:textColor="#8F959E"
+                        android:fontFamily="@font/inter"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.8"
+                android:textSize="15dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:textColor="#8F959E"
+                android:text="Rating"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textViewDescription1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada eget vitae amet..."
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textSize="15sp"
+            android:textColor="#8F959E"
+            android:padding="8dp"
+            android:lineSpacingExtra="4dp"
+            android:background="@android:color/transparent"
+            android:gravity="start"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Price"
+                android:textColor="#1D1E20"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="with VAT,SD"
+                android:textColor="#8F959E"
+                android:textSize="11dp"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textColor="#1D1E20"
+                android:text="$125"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+       </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:backgroundTint="#9775FA"
+            android:text="Add to Cart"
+            android:fontFamily="@font/inter"
+            android:textSize="17sp"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

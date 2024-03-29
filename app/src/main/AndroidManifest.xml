@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Businessprofileqr"
         tools:targetApi="31">
         <activity
+            android:name=".Customer"
+            android:exported="false" />
+        <activity
+            android:name=".Customer_main"
+            android:exported="false" />
+        <activity
             android:name=".my_product_business"
             android:exported="false" />
         <activity

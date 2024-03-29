@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginRight="9dp"
+    android:layout_marginBottom="15dp"
+    android:id="@+id/bus_card"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bus_profile_card"
+        android:layout_width="140dp"
+        android:layout_height="189dp"
+        android:elevation="35dp"
+        android:background="@drawable/textview_border"
+        android:backgroundTint="#40EFE6E6"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="3dp">
+
+        <!--        <ImageView-->
+<!--            android:id="@+id/bus_profile_image"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity=""-->
+<!--            android:background="@drawable/textview_border"-->
+<!--            android:src="@drawable/bus_profile_image"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:padding="2dp"
+            android:src="@drawable/bus_profile_image"
+            android:layout_gravity="start|top"
+            android:id="@+id/bus_profile_image"
+            />
+
+        <TextView
+
+            android:id="@+id/bus_name"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:text="Men’s fashion store "
+            android:layout_gravity="bottom|center"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/inter"
+            android:textColor="#090909"
+            android:outlineProvider="background"
+            android:outlineAmbientShadowColor="@color/my_button_color"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

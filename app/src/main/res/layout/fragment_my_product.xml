@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:layout_margin="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".nav_fragment.MyProductFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="My Product"-->
+<!--        android:textSize="32sp"-->
+<!--        android:gravity="center"-->
+<!--        android:textColor="@color/my_button_color"/>-->
+
+   <androidx.appcompat.widget.SearchView
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       app:searchIcon="@drawable/search"
+       android:background="@android:color/transparent"
+       android:paddingLeft="15dp"
+       app:queryHint="Search..."
+       android:label="Search"
+       android:layout_marginBottom="24dp"
+       android:voiceSearchMode="showVoiceSearchButton|launchRecognizer"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="141dp"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter"
+            android:text="365 Item"
+            android:textSize="17sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available in stock"
+                android:textSize="15sp"
+                android:textColor="#8F959E"/>
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/btnsort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+
+            android:src="@drawable/menu_horizontal" />
+
+        <TextView
+            android:id="@+id/sort"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+
+            android:fontFamily="@font/inter"
+            android:gravity="end"
+            android:text="Sort"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycleView_Myproduct"/>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="15dp">
+    <FrameLayout
+        android:id="@+id/imageLayut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/Order_imageView"
+        android:src="@drawable/image1"
+        android:background="@drawable/rounded_corner"
+        android:scaleType="centerCrop"
+        android:layout_width="160dp"
+        android:layout_height="203dp"  />
+        <ImageView
+            android:id="@+id/Prod_Like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/like_icon"
+            android:layout_gravity="end"
+            android:layout_margin="15dp"/>
+    </FrameLayout>
+    <TextView
+        android:id="@+id/Order_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nike Sportswear Club Fleece"
+        android:layout_below="@+id/imageLayut"
+        android:fontFamily="@font/inter"
+        android:textColor="#1D1E20"
+        android:textSize="11sp"/>
+    <TextView
+        android:id="@+id/number_of_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 Order"
+        android:layout_below="@+id/Order_Name"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>

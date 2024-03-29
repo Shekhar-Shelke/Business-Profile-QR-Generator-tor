@@ -7,18 +7,41 @@
     android:background="@color/mysplash_color"
     tools:context=".SplashActivity2">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="103dp"
-        android:layout_height="58dp"
-        android:fontFamily="@font/roboto_bold"
-        android:text="S&amp;N"
-        android:textColor="#FFF6F6"
-        android:textSize="48sp"
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5" />
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView"-->
+    <!--        android:layout_width="129dp"-->
+    <!--        android:layout_height="66dp"-->
+    <!--        android:fontFamily="@font/bangersregular"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="S &amp; N"-->
+    <!--        android:textColor="#FFF6F6"-->
+    <!--        android:textSize="48sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.5" />-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/bangersregular"-->
+    <!--        android:text="QR GENERATOR"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="38sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>

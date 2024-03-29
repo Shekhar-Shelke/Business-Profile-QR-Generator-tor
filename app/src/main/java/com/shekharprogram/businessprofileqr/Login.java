@@ -14,7 +14,7 @@ import org.w3c.dom.Text;
 public class Login extends AppCompatActivity {
 
     Button createbtn;
-    ImageView backbtn;
+    ImageView backbtn ,gogglebtn;
     TextView Signin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +22,18 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 //        getSupportActionBar().setTitle("Login");
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        gogglebtn=findViewById(R.id.gogglebtn);
         backbtn=findViewById(R.id.backbtn);
         createbtn=findViewById(R.id.signupbtn);
         Signin=(TextView)findViewById(R.id.Signin);
 
+        gogglebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Login.this, Customer_main.class);
+                startActivity(intent);
+            }
+        });
         Signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

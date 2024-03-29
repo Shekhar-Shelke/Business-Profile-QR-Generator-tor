@@ -3,4 +3,9 @@
     <string name="Term_and_condition">By connecting your account confirm that you agree \n with our Term and Condition</string>
     <string name="Term_and_condition2"><![CDATA[This is <strong>bold</strong> text within a single TextView]]></string>
     <string name="title_activity_business_page_main">Business_page_Main</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="OpenDrawer">Open navigation drawer</string>
+    <string name="CloseDrawer">Close navigation drawer</string>
 </resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cus_home"
+        android:title="Account Information"
+        android:icon="@drawable/home_icon"/>
+    <item
+        android:id="@+id/cus_watchlist"
+        android:title="watchlist"
+        android:icon="@drawable/like_icon"/>
+
+    <item
+        android:id="@+id/cus_order"
+        android:title="Order"
+        android:icon="@drawable/bag_icon"/>
+
+
+    <item
+        android:id="@+id/cus_card"
+        android:title="My Card"
+        android:icon="@drawable/my_card"/>
+
+
+</menu>
